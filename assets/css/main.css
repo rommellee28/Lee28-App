@@ -1,0 +1,132 @@
+:root {
+	--panel-width: 20vw;
+	--app-width: 80vw;
+
+	--full-height: 100vh;
+	--full-width: 100vw;
+
+	--top-height: 3rem;
+
+	--primary-color: #1892d7;
+	--secondary-color: #353535;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #dfdfdf;
+}
+
+.container {
+	box-sizing: border-box;
+	height: var(--full-height);
+	width: var(--full-width);
+	display: flex;
+}
+
+/* Lateral Panel */
+.panel {
+	box-sizing: border-box;
+	height: var(--full-height);
+	width: var(--panel-width);
+	background-color: var(--secondary-color);
+}
+
+.panel-header {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	padding: 0 1rem;
+	height: var(--top-height);
+	width: var(--panel-width);
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.panel-content {
+	box-sizing: border-box;
+	display: flex;
+	height: calc(100vh - var(--top-height));
+	padding: 1rem 0;
+	overflow-x: hidden; 
+	overflow-y: auto;
+}
+
+.panel-item {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	height: var(--top-height);
+	width: var(--panel-width);
+	padding: 0 1rem;
+	margin: .5rem 0;
+	background-color: orange;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* Main Frame */
+.app {
+	box-sizing: border-box;
+	height: 100vh;
+	width: var(--app-width);
+}
+
+.app-header {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: var(--top-height);
+	width: var(--app-width);
+	padding: 0 .5rem;
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.toggle-panel {
+	background-color: red;
+}
+
+.search-bar {
+	background-color: cyan;
+}
+
+.user-menu {
+	display: flex;
+	align-items: center;
+	background-color: green;
+}
+
+.user-img {
+	border: solid 1pt #000;
+	border-radius: 100%;
+	width: 2rem;
+	height: 2rem;
+}
+
+.app-content {
+	box-sizing: border-box;
+	display: flex;
+	height: calc(100vh - var(--top-height));
+	background-color: #fdfdfd;
+	padding: 1rem;
+}
+
+a {
+	box-sizing: border-box;
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+a:visited {
+	color: var(--primary-color);
+}
+
+a > li.panel-item {
+	color: var(--primary-color);
+}
