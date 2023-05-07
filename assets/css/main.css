@@ -9,6 +9,11 @@
 
 	--primary-color: #1892d7;
 	--secondary-color: #353535;
+	--test-color-0: #1D276B;
+	--test-color-1: #8895EE;
+	--test-color-2: #3F56EB;
+	--test-color-3: #3D436B;
+	--test-color-4: #3345BD;
 }
 
 * {
